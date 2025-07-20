@@ -20,7 +20,6 @@ function initAOS() {
     once: true, // Only animate once
     offset: 50, // Smaller offset to trigger earlier
     delay: 0, // No delay by default
-    disable: "mobile", // Disable on mobile for better performance
   });
 }
 
