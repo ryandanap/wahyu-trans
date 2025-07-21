@@ -15,7 +15,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Native smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -145,7 +145,7 @@ header.scrolled {
 }
 
 .logo-img {
-  height: 60px; 
+  height: 60px;
   width: auto;
   object-fit: contain;
 }
@@ -163,6 +163,7 @@ header.scrolled {
 nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 nav ul li {
@@ -216,12 +217,15 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 1px;
   overflow: hidden;
 }
 
 .hero-content {
   color: var(--white);
   max-width: 800px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content h1 {
@@ -273,15 +277,51 @@ nav ul li a:hover::after {
   border-color: var(--white);
 }
 
+/* Parallax elements */
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.parallax-element {
+  position: absolute;
+  z-index: 1;
+}
+
+.parallax-element.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(253, 203, 110, 0.1);
+  top: -150px;
+  right: -150px;
+}
+
+.parallax-element.square {
+  width: 200px;
+  height: 200px;
+  background: rgba(75, 163, 195, 0.1);
+  bottom: -100px;
+  left: -100px;
+  transform: rotate(45deg);
+}
+
 /* Services Section */
 .services {
-  padding: 100px 0;
+  margin: 10px 0;
   background-color: var(--white);
+  position: relative;
+  overflow: hidden;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 60px;
+  opacity: 1 !important; /* Ensure visibility */
 }
 
 .section-header h2 {
@@ -290,6 +330,7 @@ nav ul li a:hover::after {
   margin-bottom: 15px;
   position: relative;
   display: inline-block;
+  opacity: 1 !important; /* Ensure visibility */
 }
 
 .section-header h2::after {
@@ -314,6 +355,7 @@ nav ul li a:hover::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  padding-bottom: 10px;
 }
 
 .service-card {
@@ -337,11 +379,6 @@ nav ul li a:hover::after {
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  transition: transform 0.5s ease;
-}
-
-.service-img:hover {
-  transform: scale(1.1);
 }
 
 .service-icon {
@@ -395,8 +432,10 @@ nav ul li a:hover::after {
 
 /* Service Areas */
 .service-areas {
-  padding: 100px 0;
+  margin: 10px 0;
   background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
 }
 
 .areas-grid {
@@ -463,8 +502,10 @@ nav ul li a:hover::after {
 
 /* Booking Section */
 .booking {
-  padding: 100px 0;
+  margin: 10px 0;
   background-color: var(--white);
+  position: relative;
+  overflow: hidden;
 }
 
 .booking-container {
@@ -539,8 +580,10 @@ nav ul li a:hover::after {
 
 /* Testimonials */
 .testimonials {
-  padding: 100px 0;
+  margin: 10px 0;
   background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
 }
 
 .testimonial-slider {
@@ -553,7 +596,6 @@ nav ul li a:hover::after {
 .testimonial-container {
   display: flex;
   transition: transform 0.5s ease;
-  touch-action: pan-y;
 }
 
 .testimonial-item {
@@ -619,6 +661,7 @@ nav ul li a:hover::after {
   background-color: #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 
 .testimonial-dot.active {
@@ -629,6 +672,7 @@ nav ul li a:hover::after {
 /* whatsapp */
 .whatsapp-float {
   position: fixed;
+  border: 15px solid #25d366;
   width: 60px;
   height: 60px;
   bottom: 50px;
@@ -652,6 +696,8 @@ footer {
   background-color: var(--deep-blue);
   color: var(--white);
   padding: 70px 0 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-container {
@@ -761,6 +807,12 @@ footer {
 .feature i {
   margin-right: 10px;
   font-size: 1.2rem;
+}
+
+/* Section padding for scroll offset */
+section {
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
 /* Responsive Styles */
