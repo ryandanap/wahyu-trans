@@ -169,9 +169,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "booking-footer": "Pemesanan",
       "testimonials-footer": "Testimoni",
       "contact-footer": "Kontak",
-      address: "Jl. Raya Utama No. 123, Surabaya",
+      address:
+        "Jl. Sawo Kabeh, Dawan Klod, Kec. Dawan, Kabupaten Klungkung, Bali",
       hours: "Senin - Minggu: 24 Jam",
-      copyright: "&copy; 2023 Wahyu Trans. All Rights Reserved.",
+      copyright: "&copy; 2025 Wahyu Trans. All Rights Reserved.",
     },
     en: {
       home: "Home",
@@ -263,9 +264,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "booking-footer": "Booking",
       "testimonials-footer": "Testimonials",
       "contact-footer": "Contact",
-      address: "Jl. Raya Utama No. 123, Surabaya",
+      address:
+        "Jl. Sawo Kabeh, Dawan Klod, Kec. Dawan, Kabupaten Klungkung, Bali",
       hours: "Monday - Sunday: 24 Hours",
-      copyright: "&copy; 2023 Wahyu Trans. All Rights Reserved.",
+      copyright: "&copy; 2025 Wahyu Trans. All Rights Reserved.",
     },
     zh: {
       home: "首页",
@@ -349,9 +351,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "booking-footer": "预订",
       "testimonials-footer": "客户评价",
       "contact-footer": "联系我们",
-      address: "印度尼西亚泗水 Jl. Raya Utama No. 123",
+      address: "印度尼西亚巴厘岛克伦孔县达万区达万克洛德萨沃卡贝赫街",
       hours: "周一至周日：24小时",
-      copyright: "&copy; 2023 Wahyu Trans. 版权所有。",
+      copyright: "&copy; 2025 Wahyu Trans. 版权所有。",
     },
     ja: {
       home: "ホーム",
@@ -440,9 +442,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "booking-footer": "予約",
       "testimonials-footer": "お客様の声",
       "contact-footer": "お問い合わせ",
-      address: "Jl. Raya Utama No. 123, スラバヤ",
+      address: "バリ島クルンクン県ダワン地区ダワンクロッド、サウォカベ通り",
       hours: "月曜日〜日曜日：24時間",
-      copyright: "&copy; 2023 Wahyu Trans. All Rights Reserved.",
+      copyright: "&copy; 2025 Wahyu Trans. All Rights Reserved.",
     },
     ar: {
       home: "الرئيسية",
@@ -530,9 +532,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "booking-footer": "الحجز",
       "testimonials-footer": "آراء العملاء",
       "contact-footer": "اتصل بنا",
-      address: "شارع رايا أوتاما رقم 123، سورابايا",
+      address: "شارع ساوو كابيه، داوان كلود، منطقة داوان، كلونغكونغ، بالي",
       hours: "الاثنين - الأحد: 24 ساعة",
-      copyright: "&copy; 2023 واهيو ترانس. جميع الحقوق محفوظة.",
+      copyright: "&copy; 2025 واهيو ترانس. جميع الحقوق محفوظة.",
     },
   };
 
