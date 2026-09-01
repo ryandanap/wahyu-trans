@@ -1,407 +1,822 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wahyu Trans - Layanan Transportasi Terpercaya</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Loader -->
     <div class="loader-wrapper" id="loader">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-            <div class="loader-text">WAHYU TRANS</div>
-        </div>
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-text">WAHYU TRANS</div>
+      </div>
     </div>
 
     <!-- Header -->
     <header id="header">
-        <div class="container header-container">
-            <div class="logo">
-            <h1>
-            <img src="img/LOGO_WAHYUTRANSkuning-removebg.png" alt="" class="logo-img">
-            </h1>
+      <div class="container header-container">
+        <div class="logo">
+          <h1>
+            <img
+              src="img/LOGO_WAHYUTRANSkuning-removebg.png"
+              alt=""
+              class="logo-img"
+            />
+          </h1>
         </div>
-            <div class="mobile-actions">
-                <button class="mobile-language-btn" id="mobileLangBtn">
-                    <i class="fas fa-language"></i>
-                </button>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#home" class="nav-link" data-lang-key="home">Beranda</a></li>
-                    <li><a href="#services" class="nav-link" data-lang-key="services">Layanan</a></li>
-                    <li><a href="#areas" class="nav-link" data-lang-key="areas">Area Layanan</a></li>
-                    <li><a href="#booking" class="nav-link" data-lang-key="booking">Pemesanan</a></li>
-                    <li><a href="#testimonials" class="nav-link" data-lang-key="testimonials">Testimoni</a></li>
-                    <li><a href="#contact" class="nav-link" data-lang-key="contact">Kontak</a></li>
-                    <li class="language-selector">
-                        <button class="language-btn" id="languageBtn">
-                            <i class="fas fa-language"></i>
-                        </button>
-                        <div class="language-dropdown" id="languageDropdown">
-                            <div class="language-option active" data-lang="id">
-                                <img src="https://flagcdn.com/w20/id.png" alt="Indonesia" class="language-flag">
-                                <span class="language-name">Indonesia</span>
-                            </div>
-                            <div class="language-option" data-lang="en">
-                                <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag">
-                                <span class="language-name">English</span>
-                            </div>
-                            <div class="language-option" data-lang="zh">
-                                <img src="https://flagcdn.com/w20/cn.png" alt="中文" class="language-flag">
-                                <span class="language-name">中文</span>
-                            </div>
-                            <div class="language-option" data-lang="ja">
-                                <img src="https://flagcdn.com/w20/jp.png" alt="日本語" class="language-flag">
-                                <span class="language-name">日本語</span>
-                            </div>
-                            <div class="language-option" data-lang="ar">
-                                <img src="https://flagcdn.com/w20/sa.png" alt="العربية" class="language-flag">
-                                <span class="language-name">العربية</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+        <div class="mobile-actions">
+          <button class="mobile-language-btn" id="mobileLangBtn">
+            <i class="fas fa-language"></i>
+          </button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#home" class="nav-link" data-lang-key="home">Beranda</a>
+            </li>
+            <li>
+              <a href="#services" class="nav-link" data-lang-key="services"
+                >Layanan</a
+              >
+            </li>
+            <li>
+              <a href="#booking" class="nav-link" data-lang-key="booking"
+                >Pemesanan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="nav-link"
+                data-lang-key="testimonials"
+                >Testimoni</a
+              >
+            </li>
+            <li class="language-selector">
+              <button class="language-btn" id="languageBtn">
+                <i class="fas fa-language"></i>
+              </button>
+              <div class="language-dropdown" id="languageDropdown">
+                <div class="language-option active" data-lang="id">
+                  <img
+                    src="https://flagcdn.com/w20/id.png"
+                    alt="Indonesia"
+                    class="language-flag"
+                  />
+                  <span class="language-name">Indonesia</span>
+                </div>
+                <div class="language-option" data-lang="en">
+                  <img
+                    src="https://flagcdn.com/w20/gb.png"
+                    alt="English"
+                    class="language-flag"
+                  />
+                  <span class="language-name">English</span>
+                </div>
+                <div class="language-option" data-lang="zh">
+                  <img
+                    src="https://flagcdn.com/w20/cn.png"
+                    alt="中文"
+                    class="language-flag"
+                  />
+                  <span class="language-name">中文</span>
+                </div>
+                <div class="language-option" data-lang="ja">
+                  <img
+                    src="https://flagcdn.com/w20/jp.png"
+                    alt="日本語"
+                    class="language-flag"
+                  />
+                  <span class="language-name">日本語</span>
+                </div>
+                <div class="language-option" data-lang="ar">
+                  <img
+                    src="https://flagcdn.com/w20/sa.png"
+                    alt="العربية"
+                    class="language-flag"
+                  />
+                  <span class="language-name">العربية</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Mobile Language Dropdown -->
     <div class="mobile-language-dropdown" id="mobileLangDropdown">
-        <div class="language-option active" data-lang="id">
-            <img src="https://flagcdn.com/w20/id.png" alt="Indonesia" class="language-flag">
-            <span class="language-name">Indonesia</span>
-        </div>
-        <div class="language-option" data-lang="en">
-            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag">
-            <span class="language-name">English</span>
-        </div>
-        <div class="language-option" data-lang="zh">
-            <img src="https://flagcdn.com/w20/cn.png" alt="中文" class="language-flag">
-            <span class="language-name">中文</span>
-        </div>
-        <div class="language-option" data-lang="ja">
-            <img src="https://flagcdn.com/w20/jp.png" alt="日本語" class="language-flag">
-            <span class="language-name">日本語</span>
-        </div>
-        <div class="language-option" data-lang="ar">
-            <img src="https://flagcdn.com/w20/sa.png" alt="العربية" class="language-flag">
-            <span class="language-name">العربية</span>
-        </div>
+      <div class="language-option active" data-lang="id">
+        <img
+          src="https://flagcdn.com/w20/id.png"
+          alt="Indonesia"
+          class="language-flag"
+        />
+        <span class="language-name">Indonesia</span>
+      </div>
+      <div class="language-option" data-lang="en">
+        <img
+          src="https://flagcdn.com/w20/gb.png"
+          alt="English"
+          class="language-flag"
+        />
+        <span class="language-name">English</span>
+      </div>
+      <div class="language-option" data-lang="zh">
+        <img
+          src="https://flagcdn.com/w20/cn.png"
+          alt="中文"
+          class="language-flag"
+        />
+        <span class="language-name">中文</span>
+      </div>
+      <div class="language-option" data-lang="ja">
+        <img
+          src="https://flagcdn.com/w20/jp.png"
+          alt="日本語"
+          class="language-flag"
+        />
+        <span class="language-name">日本語</span>
+      </div>
+      <div class="language-option" data-lang="ar">
+        <img
+          src="https://flagcdn.com/w20/sa.png"
+          alt="العربية"
+          class="language-flag"
+        />
+        <span class="language-name">العربية</span>
+      </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="parallax-bg" id="parallaxBg"></div>
-        <div class="parallax-element circle" id="parallaxCircle"></div>
-        <div class="parallax-element square" id="parallaxSquare"></div>
-        <div class="container">
-            <div class="hero-content" id="heroContent" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <h1 data-lang-key="hero-title">Perjalanan Nyaman Bersama <span class="highlight">Wahyu Trans</span></h1>
-                <p data-lang-key="hero-description">Layanan transportasi terpercaya untuk wisata religi, tour, travel, dan charter di seluruh Indonesia. Nikmati perjalanan yang aman, nyaman, dan berkesan.</p>
-                <div class="hero-buttons">
-                    <a href="#booking" class="btn scroll-link" data-lang-key="book-now">Pesan Sekarang</a>
-                    <a href="#services" class="btn btn-outline scroll-link" data-lang-key="view-services">Lihat Layanan</a>
-                </div>
-            </div>
+      <div class="parallax-bg" id="parallaxBg"></div>
+      <div class="parallax-element circle" id="parallaxCircle"></div>
+      <div class="parallax-element square" id="parallaxSquare"></div>
+      <div class="container">
+        <div
+          class="hero-content"
+          id="heroContent"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <h1 data-lang-key="hero-title">
+            Perjalanan Nyaman Bersama <span class="highlight">Wahyu Trans</span>
+          </h1>
+          <p data-lang-key="hero-description">
+            Layanan transportasi terpercaya untuk wisata religi, tour, travel,
+            dan charter di seluruh Indonesia. Nikmati perjalanan yang aman,
+            nyaman, dan berkesan.
+          </p>
+          <div class="hero-buttons">
+            <a href="#booking" class="btn scroll-link" data-lang-key="book-now"
+              >Pesan Sekarang</a
+            >
+            <a
+              href="#services"
+              class="btn btn-outline scroll-link"
+              data-lang-key="view-services"
+              >Lihat Layanan</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
-                <h2 data-lang-key="our-services">Layanan Kami</h2>
-                <p data-lang-key="services-description">Wahyu Trans menyediakan berbagai layanan transportasi untuk memenuhi kebutuhan perjalanan Anda</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <img src="img/wisata religi.jpg" alt="" class="service-img">
-                    <div class="service-content">
-                        <h3 data-lang-key="religious-tour">Wisata Religi</h3>
-                        <p data-lang-key="religious-tour-desc">Kunjungi tempat ibadah dan lokasi bersejarah dengan nyaman dan khusyuk bersama keluarga atau rombongan.</p>
-                        <a href="#booking" class="service-link scroll-link" data-lang-key="book-now-link">Pesan Sekarang <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <img src="img/tour2.jpg" alt="" class="service-img">
-                    <div class="service-content">
-                        <h3 data-lang-key="tour">Tour</h3>
-                        <p data-lang-key="tour-desc">Jelajahi destinasi wisata populer dengan paket tour lengkap termasuk transportasi, akomodasi, dan pemandu.</p>
-                        <a href="#booking" class="service-link scroll-link" data-lang-key="book-now-link">Pesan Sekarang <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <img src="img/travel.jpg" alt="" class="service-img">
-                    <div class="service-content">
-                        <h3 data-lang-key="travel">Travel</h3>
-                        <p data-lang-key="travel-desc">Layanan antar-jemput ke berbagai kota dengan jadwal rutin menggunakan kendaraan yang nyaman dan aman.</p>
-                        <a href="#booking" class="service-link scroll-link" data-lang-key="book-now-link">Pesan Sekarang <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <img src="img/charter.jpg" alt="" class="service-img">
-                    <div class="service-content">
-                        <h3 data-lang-key="charter">Charter</h3>
-                        <p data-lang-key="charter-desc">Sewa kendaraan dengan sopir profesional untuk kebutuhan pribadi, keluarga, atau perusahaan Anda.</p>
-                        <a href="#booking" class="service-link scroll-link" data-lang-key="book-now-link">Pesan Sekarang <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+          <h2 data-lang-key="our-services">Layanan Kami</h2>
+          <p data-lang-key="services-description">
+            Wahyu Trans menyediakan berbagai layanan transportasi untuk memenuhi
+            kebutuhan perjalanan Anda
+          </p>
         </div>
+        <div class="services-grid">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <img src="img/wisata religi.jpg" alt="" class="service-img" />
+            <div class="service-content">
+              <h3 data-lang-key="religious-tour">Wisata Religi</h3>
+              <p data-lang-key="religious-tour-desc">
+                Kunjungi tempat ibadah dan lokasi bersejarah dengan nyaman dan
+                khusyuk bersama keluarga atau rombongan.
+              </p>
+              <a
+                href="#booking"
+                class="service-link scroll-link"
+                data-lang-key="book-now-link"
+                >Pesan Sekarang <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <img src="img/tour2.jpg" alt="" class="service-img" />
+            <div class="service-content">
+              <h3 data-lang-key="tour">Tour</h3>
+              <p data-lang-key="tour-desc">
+                Jelajahi destinasi wisata populer dengan paket tour lengkap
+                termasuk transportasi, akomodasi, dan pemandu.
+              </p>
+              <a
+                href="#booking"
+                class="service-link scroll-link"
+                data-lang-key="book-now-link"
+                >Pesan Sekarang <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <img src="img/travel.jpg" alt="" class="service-img" />
+            <div class="service-content">
+              <h3 data-lang-key="travel">Travel</h3>
+              <p data-lang-key="travel-desc">
+                Layanan antar-jemput ke berbagai kota dengan jadwal rutin
+                menggunakan kendaraan yang nyaman dan aman.
+              </p>
+              <a
+                href="#booking"
+                class="service-link scroll-link"
+                data-lang-key="book-now-link"
+                >Pesan Sekarang <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <img src="img/charter.jpg" alt="" class="service-img" />
+            <div class="service-content">
+              <h3 data-lang-key="charter">Charter</h3>
+              <p data-lang-key="charter-desc">
+                Sewa kendaraan dengan sopir profesional untuk kebutuhan pribadi,
+                keluarga, atau perusahaan Anda.
+              </p>
+              <a
+                href="#booking"
+                class="service-link scroll-link"
+                data-lang-key="book-now-link"
+                >Pesan Sekarang <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Service Areas -->
     <section class="service-areas" id="areas">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
-                <h2 data-lang-key="service-areas">Area Layanan</h2>
-                <p data-lang-key="areas-description">Wahyu Trans melayani destinasi populer di Indonesia</p>
-            </div>
-            <div class="areas-grid">
-                <div class="area-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" alt="Bali" class="area-image">
-                    <div class="area-overlay">
-                        <h3>Bali</h3>
-                        <p data-lang-key="bali-desc">Pulau Dewata dengan pesona alam dan budaya yang memukau</p>
-                        <a href="#booking" class="btn scroll-link" data-lang-key="view-details">Lihat Detail</a>
-                    </div>
-                </div>
-                <div class="area-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Jawa" class="area-image">
-                    <div class="area-overlay">
-                        <h3>Jawa</h3>
-                        <p data-lang-key="java-desc">Jelajahi keindahan Pulau Jawa dari Jakarta hingga Surabaya</p>
-                        <a href="#booking" class="btn scroll-link" data-lang-key="view-details">Lihat Detail</a>
-                    </div>
-                </div>
-                <div class="area-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Lombok" class="area-image">
-                    <div class="area-overlay">
-                        <h3>Lombok</h3>
-                        <p data-lang-key="lombok-desc">Nikmati pantai indah dan keagungan Gunung Rinjani</p>
-                        <a href="#booking" class="btn scroll-link" data-lang-key="view-details">Lihat Detail</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+          <h2 data-lang-key="service-areas">Area Layanan</h2>
+          <p data-lang-key="areas-description">
+            Wahyu Trans melayani destinasi populer di Indonesia
+          </p>
         </div>
+        <div class="areas-grid">
+          <div
+            class="area-card"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+              alt="Bali"
+              class="area-image"
+            />
+            <div class="area-overlay">
+              <h3>Bali</h3>
+              <p data-lang-key="bali-desc">
+                Pulau Dewata dengan pesona alam dan budaya yang memukau
+              </p>
+              <a
+                href="#booking"
+                class="btn scroll-link"
+                data-lang-key="view-details"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+          <div
+            class="area-card"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              alt="Jawa"
+              class="area-image"
+            />
+            <div class="area-overlay">
+              <h3>Jawa</h3>
+              <p data-lang-key="java-desc">
+                Jelajahi keindahan Pulau Jawa dari Jakarta hingga Surabaya
+              </p>
+              <a
+                href="#booking"
+                class="btn scroll-link"
+                data-lang-key="view-details"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+          <div
+            class="area-card"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              alt="Lombok"
+              class="area-image"
+            />
+            <div class="area-overlay">
+              <h3>Lombok</h3>
+              <p data-lang-key="lombok-desc">
+                Nikmati pantai indah dan keagungan Gunung Rinjani
+              </p>
+              <a
+                href="#booking"
+                class="btn scroll-link"
+                data-lang-key="view-details"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Booking Section -->
     <section class="booking" id="booking">
-        <div class="container">
-            <div class="booking-container">
-                <div class="booking-content" data-aos="fade-right" data-aos-duration="800">
-                    <h2 data-lang-key="book-your-trip">Pesan Perjalanan Anda</h2>
-                    <p data-lang-key="booking-desc-1">Untuk memesan layanan transportasi Wahyu Trans, silakan isi formulir di samping. Tim kami akan segera menghubungi Anda untuk konfirmasi dan detail lebih lanjut.</p>
-                    <p data-lang-key="booking-desc-2">Dapatkan diskon khusus untuk pemesanan rombongan dan pelanggan setia. Hubungi kami untuk informasi lebih lanjut.</p>
-                    <div class="booking-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle" style="color: var(--soft-gold);"></i>
-                            <span data-lang-key="feature-1">Kendaraan Berkualitas</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle" style="color: var(--soft-gold);"></i>
-                            <span data-lang-key="feature-2">Sopir Profesional</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle" style="color: var(--soft-gold);"></i>
-                            <span data-lang-key="feature-3">Harga Terjangkau</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle" style="color: var(--soft-gold);"></i>
-                            <span data-lang-key="feature-4">Layanan 24 Jam</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="booking-form" data-aos="fade-left" data-aos-duration="800">
-                    <form id="bookingFormElement">
-                        <div class="form-group">
-                            <label for="name" data-lang-key="full-name">Nama Lengkap</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email" data-lang-key="email">Email</label>
-                                <input type="email" id="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" data-lang-key="phone">Nomor Telepon</label>
-                                <input type="tel" id="phone" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="service" data-lang-key="service-type">Jenis Layanan</label>
-                            <select id="service" class="form-control" required>
-                                <option value="" data-lang-key="select-service" disabled selected hidden>Pilih Layanan</option>
-                                <option value="religi" data-lang-key="religious-tour-option">Wisata Religi</option>
-                                <option value="tour" data-lang-key="tour-option">Tour</option>
-                                <option value="travel" data-lang-key="travel-option">Travel</option>
-                                <option value="charter" data-lang-key="charter-option">Charter</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="vehicle" data-lang-key="vehicle-type">Jenis Kendaraan</label>
-                            <select id="vehicle" class="form-control" required>
-                                <option value="" data-lang-key="select-vehicle" disabled selected hidden>Pilih Kendaraan</option>
-                                <option value="hiace" data-lang-key="toyota-hiace">Toyota Hiace</option>
-                                <option value="bus" data-lang-key="bus">Bus</option><option value="elf-short" data-lang-key="elf-short">Elf Short</option>
-                                <option value="elf-long" data-lang-key="elf-long">Elf Long</option>
-                                <option value="car" data-lang-key="private-car">Mobil Pribadi</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="departure" data-lang-key="departure-date">Tanggal Berangkat</label>
-                                <input type="date" id="departure" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="return" data-lang-key="return-date">Tanggal Kembali</label>
-                                <input type="date" id="return" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="origin" data-lang-key="origin-city">Kota Asal</label>
-                                <input type="text" id="origin" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="destination" data-lang-key="destination-city">Kota Tujuan</label>
-                                <input type="text" id="destination" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="passengers" data-lang-key="passengers">Jumlah Penumpang</label>
-                            <input type="number" id="passengers" class="form-control" min="1" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-lang-key="additional-message">Pesan Tambahan</label>
-                            <textarea id="message" class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-block" data-lang-key="send-request">Kirim Permintaan</button>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="booking-container">
+          <div
+            class="booking-content"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h2 data-lang-key="book-your-trip">Pesan Perjalanan Anda</h2>
+            <p data-lang-key="booking-desc-1">
+              Untuk memesan layanan transportasi Wahyu Trans, silakan isi
+              formulir di samping. Tim kami akan segera menghubungi Anda untuk
+              konfirmasi dan detail lebih lanjut.
+            </p>
+            <p data-lang-key="booking-desc-2">
+              Dapatkan diskon khusus untuk pemesanan rombongan dan pelanggan
+              setia. Hubungi kami untuk informasi lebih lanjut.
+            </p>
+            <div class="booking-features">
+              <div class="feature">
+                <i
+                  class="fas fa-check-circle"
+                  style="color: var(--soft-gold)"
+                ></i>
+                <span data-lang-key="feature-1">Kendaraan Berkualitas</span>
+              </div>
+              <div class="feature">
+                <i
+                  class="fas fa-check-circle"
+                  style="color: var(--soft-gold)"
+                ></i>
+                <span data-lang-key="feature-2">Sopir Profesional</span>
+              </div>
+              <div class="feature">
+                <i
+                  class="fas fa-check-circle"
+                  style="color: var(--soft-gold)"
+                ></i>
+                <span data-lang-key="feature-3">Harga Terjangkau</span>
+              </div>
+              <div class="feature">
+                <i
+                  class="fas fa-check-circle"
+                  style="color: var(--soft-gold)"
+                ></i>
+                <span data-lang-key="feature-4">Layanan 24 Jam</span>
+              </div>
             </div>
+          </div>
+          <div
+            class="booking-form"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <form id="bookingFormElement">
+              <div class="form-group">
+                <label for="name" data-lang-key="full-name">Nama Lengkap</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" data-lang-key="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" data-lang-key="phone">Nomor Telepon</label>
+                  <input type="tel" id="phone" class="form-control" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service" data-lang-key="service-type"
+                  >Jenis Layanan</label
+                >
+                <select id="service" class="form-control" required>
+                  <option
+                    value=""
+                    data-lang-key="select-service"
+                    disabled
+                    selected
+                    hidden
+                  >
+                    Pilih Layanan
+                  </option>
+                  <option value="religi" data-lang-key="religious-tour-option">
+                    Wisata Religi
+                  </option>
+                  <option value="tour" data-lang-key="tour-option">Tour</option>
+                  <option value="travel" data-lang-key="travel-option">
+                    Travel
+                  </option>
+                  <option value="charter" data-lang-key="charter-option">
+                    Charter
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="vehicle" data-lang-key="vehicle-type"
+                  >Jenis Kendaraan</label
+                >
+                <select id="vehicle" class="form-control" required>
+                  <option
+                    value=""
+                    data-lang-key="select-vehicle"
+                    disabled
+                    selected
+                    hidden
+                  >
+                    Pilih Kendaraan
+                  </option>
+                  <option value="hiace" data-lang-key="toyota-hiace">
+                    Toyota Hiace
+                  </option>
+                  <option value="bus" data-lang-key="bus">Bus</option>
+                  <option value="elf-short" data-lang-key="elf-short">
+                    Elf Short
+                  </option>
+                  <option value="elf-long" data-lang-key="elf-long">
+                    Elf Long
+                  </option>
+                  <option value="car" data-lang-key="private-car">
+                    Mobil Pribadi
+                  </option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="departure" data-lang-key="departure-date"
+                    >Tanggal Berangkat</label
+                  >
+                  <input
+                    type="date"
+                    id="departure"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="return" data-lang-key="return-date"
+                    >Tanggal Kembali</label
+                  >
+                  <input type="date" id="return" class="form-control" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="origin" data-lang-key="origin-city"
+                    >Kota Asal</label
+                  >
+                  <input
+                    type="text"
+                    id="origin"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="destination" data-lang-key="destination-city"
+                    >Kota Tujuan</label
+                  >
+                  <input
+                    type="text"
+                    id="destination"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="passengers" data-lang-key="passengers"
+                  >Jumlah Penumpang</label
+                >
+                <input
+                  type="number"
+                  id="passengers"
+                  class="form-control"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" data-lang-key="additional-message"
+                  >Pesan Tambahan</label
+                >
+                <textarea id="message" class="form-control" rows="3"></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-block"
+                data-lang-key="send-request"
+              >
+                Kirim Permintaan
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
     <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
-                <h2 data-lang-key="testimonials-title">Testimoni</h2>
-                <p data-lang-key="testimonials-description">Apa kata pelanggan tentang layanan Wahyu Trans</p>
-            </div>
-            <div class="testimonial-slider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <div class="testimonial-container" id="testimonialContainer">
-                    <div class="testimonial-item">
-                        <div class="testimonial-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimoni">
-                        </div>
-                        <p class="testimonial-text" data-lang-key="testimonial-1">"Perjalanan wisata religi ke Jawa Timur bersama Wahyu Trans sangat berkesan. Sopirnya ramah dan profesional, kendaraannya nyaman, dan itinerary-nya tersusun dengan baik."</p>
-                        <h4 class="testimonial-name">Budi Santoso</h4>
-                        <p class="testimonial-position">Jakarta</p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimoni">
-                        </div>
-                        <p class="testimonial-text" data-lang-key="testimonial-2">"Saya dan keluarga baru saja menggunakan jasa Wahyu Trans untuk liburan di Bali. Pelayanannya sangat memuaskan, mobilnya bersih dan nyaman. Sopirnya juga mengenal rute dan spot wisata terbaik!"</p>
-                        <h4 class="testimonial-name">Siti Rahayu</h4>
-                        <p class="testimonial-position">Surabaya</p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-controls">
-                    <div class="testimonial-dot active" data-index="0"></div>
-                    <div class="testimonial-dot" data-index="1"></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+          <h2 data-lang-key="testimonials-title">Testimoni</h2>
+          <p data-lang-key="testimonials-description">
+            Apa kata pelanggan tentang layanan Wahyu Trans
+          </p>
         </div>
+        <div
+          class="testimonial-slider"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <div class="testimonial-container" id="testimonialContainer">
+            <div class="testimonial-item">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Testimoni"
+                />
+              </div>
+              <p class="testimonial-text" data-lang-key="testimonial-1">
+                "Perjalanan wisata religi ke Jawa Timur bersama Wahyu Trans
+                sangat berkesan. Sopirnya ramah dan profesional, kendaraannya
+                nyaman, dan itinerary-nya tersusun dengan baik."
+              </p>
+              <h4 class="testimonial-name">Budi Santoso</h4>
+              <p class="testimonial-position">Jakarta</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Testimoni"
+                />
+              </div>
+              <p class="testimonial-text" data-lang-key="testimonial-2">
+                "Saya dan keluarga baru saja menggunakan jasa Wahyu Trans untuk
+                liburan di Bali. Pelayanannya sangat memuaskan, mobilnya bersih
+                dan nyaman. Sopirnya juga mengenal rute dan spot wisata
+                terbaik!"
+              </p>
+              <h4 class="testimonial-name">Siti Rahayu</h4>
+              <p class="testimonial-position">Surabaya</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <div class="testimonial-dot active" data-index="0"></div>
+            <div class="testimonial-dot" data-index="1"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-     <!-- WhatsApp Float Button -->
+    <!-- WhatsApp Float Button -->
     <a href="#" class="whatsapp-float" target="_blank">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
-        </svg>
+      <svg
+        class="w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        ></path>
+      </svg>
     </a>
 
     <!-- Footer -->
     <footer id="contact">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <h3>Wahyu Trans</h3>
-                    <p data-lang-key="footer-description">Layanan transportasi terpercaya untuk wisata religi, tour, travel, dan charter di seluruh Indonesia. Nikmati perjalanan yang aman, nyaman, dan berkesan.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <h3 data-lang-key="services-footer">Layanan</h3>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-lang-key="religious-tour-footer">Wisata Religi</span></a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-lang-key="tour-footer">Tour</span></a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-lang-key="travel-footer">Travel</span></a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-lang-key="charter-footer">Charter</span></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <h3 data-lang-key="quick-links">Link Cepat</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home" class="scroll-link"><i class="fas fa-chevron-right"></i> <span data-lang-key="home-footer">Beranda</span></a></li>
-                        <li><a href="#services" class="scroll-link"><i class="fas fa-chevron-right"></i> <span data-lang-key="services-footer-link">Layanan</span></a></li>
-                        <li><a href="#areas" class="scroll-link"><i class="fas fa-chevron-right"></i> <span data-lang-key="areas-footer">Area Layanan</span></a></li>
-                        <li><a href="#booking" class="scroll-link"><i class="fas fa-chevron-right"></i> <span data-lang-key="booking-footer">Pemesanan</span></a></li>
-                        <li><a href="#testimonials" class="scroll-link"><i class="fas fa-chevron-right"></i> <span data-lang-key="testimonials-footer">Testimoni</span></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <h3 data-lang-key="contact-footer">Kontak</h3>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span data-lang-key="address">Jl. Sawo Kabeh, Dawan Klod, Kec. Dawan, Kabupaten Klungkung, Bali</span></a></li>
-                        <li><a href="tel:+6281234567890"><i class="fas fa-phone"></i> +62 813-3799-7701</a></li>
-                        <li><a href="mailto:info@wahyutrans.com"><i class="fas fa-envelope"></i> info@wahyutrans.com</a></li>
-                        <li><a href="#"><i class="fas fa-clock"></i> <span data-lang-key="hours">Senin - Minggu: 24 Jam</span></a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-container">
+          <div
+            class="footer-col"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <h3>Wahyu Trans</h3>
+            <p data-lang-key="footer-description">
+              Layanan transportasi terpercaya untuk wisata religi, tour, travel,
+              dan charter di seluruh Indonesia. Nikmati perjalanan yang aman,
+              nyaman, dan berkesan.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p data-lang-key="copyright">&copy; 2025 Wahyu Trans. All Rights Reserved.</p>
-            </div>
+          </div>
+          <div
+            class="footer-col"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <h3 data-lang-key="services-footer">Layanan</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="religious-tour-footer"
+                    >Wisata Religi</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="tour-footer">Tour</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="travel-footer">Travel</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="charter-footer">Charter</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="footer-col"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <h3 data-lang-key="quick-links">Link Cepat</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#home" class="scroll-link"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="home-footer">Beranda</span></a
+                >
+              </li>
+              <li>
+                <a href="#services" class="scroll-link"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="services-footer-link">Layanan</span></a
+                >
+              </li>
+              <li>
+                <a href="#areas" class="scroll-link"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="areas-footer">Area Layanan</span></a
+                >
+              </li>
+              <li>
+                <a href="#booking" class="scroll-link"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="booking-footer">Pemesanan</span></a
+                >
+              </li>
+              <li>
+                <a href="#testimonials" class="scroll-link"
+                  ><i class="fas fa-chevron-right"></i>
+                  <span data-lang-key="testimonials-footer">Testimoni</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="footer-col"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <h3 data-lang-key="contact-footer">Kontak</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"></i>
+                  <span data-lang-key="address"
+                    >Jl. Sawo Kabeh, Dawan Klod, Kec. Dawan, Kabupaten
+                    Klungkung, Bali</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="tel:+6281234567890"
+                  ><i class="fas fa-phone"></i> +62 813-3799-7701</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@wahyutrans.com"
+                  ><i class="fas fa-envelope"></i> info@wahyutrans.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-clock"></i>
+                  <span data-lang-key="hours">Senin - Minggu: 24 Jam</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p data-lang-key="copyright">
+            &copy; 2025 Wahyu Trans. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
